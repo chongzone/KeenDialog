@@ -1,0 +1,6 @@
+framework module Pods_KeenDialog_Tests {
+  umbrella header "Pods-KeenDialog_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

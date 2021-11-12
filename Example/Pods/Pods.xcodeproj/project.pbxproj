@@ -1,0 +1,1264 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		058B8062CED1FA8F307E1238B341BF5C /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3B0B200350EAC8F42EF635FF31BD1 /* ConstraintMakerEditable.swift */; };
+		0E789123A4568C5181959C6D3316F74C /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C5188AE61F0E667CD9E7ED28CDD61C /* ConstraintLayoutGuide.swift */; };
+		1754E2865AEA479A11278B40BE36F847 /* KeenHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17237996CB41786BA9CA3BB0C1C7ADC4 /* KeenHud.swift */; };
+		1DD7D68E57BCC19C594BD7488E85A367 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A46A8054577838D49C60142EB88B13 /* ConstraintLayoutSupportDSL.swift */; };
+		28F33465D39C173A5AAF7125FD325B7E /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A53CAF547D71AEFABE49D91B4E6816 /* ConstraintMakerPriortizable.swift */; };
+		32C5EA5B28C89D7B7FE296CCA29CB4F2 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141BC33167429B9926FB24A17F01568C /* ConstraintMaker.swift */; };
+		33CD4E1BBF8095BD5253834E16B4C50E /* address.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6673058DD6A7C18D90DF6AEEA5AF1D8A /* address.plist */; };
+		4500F66558D26C28D725F8A20E4EFF60 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C5B72775F6AF0891BF331F32FE10D /* LayoutConstraint.swift */; };
+		4A7033A0B65046C050F837CA4BB5AEEF /* KeenDialog-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D63EE201743B72E48AB43FFC7DEC5 /* KeenDialog-dummy.m */; };
+		56904E0031978C0919ACC9059C564AD3 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0BE9F3D55FDB29EF516F6D6B1B6BCA /* ConstraintLayoutGuideDSL.swift */; };
+		5699B80B31CB0FDAB76051D99F7DDB19 /* KeenAlertMsg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A95E6E8FA4AF7A27F56EDA524160EE3 /* KeenAlertMsg.swift */; };
+		5AD66316BD607789392EACDB6B7F502A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		5EF58AEC817CDEA73C7437961FCAA63C /* KeenDialog-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B322A02458D0E60A241D7664FC353D8C /* KeenDialog-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60ECA4520BFF3E1F89AB8FFB29BE36A0 /* KeenDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17B0FD60107D6B1CA7B905AD9425ED5 /* KeenDialog.swift */; };
+		614F524B122C11A705DE4DE5F6F3F2D8 /* ConstraintDirectionalInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D358AA1606C7B2CDC8555485807E9E /* ConstraintDirectionalInsetTarget.swift */; };
+		62142958C15157D2161959F3984E7179 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = D038D2FAA2F6B073D1B64B8635F4E3E6 /* Debugging.swift */; };
+		64B0A31CDE6EF3E9C53F823AF5616A0B /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F10DE451FED17810D9B5C237324A5 /* ConstraintMakerExtendable.swift */; };
+		695BE300B2F0D71171C8D1E02A069841 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D705690D879064ED84970813189D8D4 /* ConstraintLayoutSupport.swift */; };
+		6BA226DA518838637CEFFED664043DF8 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56006AA49A060CA2830F32CD6F394823 /* ConstraintViewDSL.swift */; };
+		74DA0963E9D0FC08F1A48B5D7C6711C9 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9716AD15FADF38A93170E034F2BCE457 /* ConstraintPriorityTarget.swift */; };
+		7996AC90DD882459365BCA55627BA249 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50380F281EC3EE769C85035CCEA77226 /* Constraint.swift */; };
+		79D0F6CD489E99521AA79DC420BA9810 /* ConstraintDirectionalInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91164BE769DA144776663FBF46785561 /* ConstraintDirectionalInsets.swift */; };
+		7AE06D566D0640BFA728D9DF4DF9D973 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1D9F6F4E2364DFAF158E04AF5D5EAA /* ConstraintDescription.swift */; };
+		886022970D1B0DB13BB336DC2BC7B0A2 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474AFC560A8B414B467174737DBC891A /* ConstraintItem.swift */; };
+		92578072DAD449CA36D06B1F0EE16150 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2EC377264B25FB0E67D150E37E87CD /* ConstraintInsetTarget.swift */; };
+		9A01640355FC1FB1095AB862F08B8161 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		9A1D7335A91F02CF17B9104FE74F2447 /* Pods-KeenDialog_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6431ECF1C2FE95044DA55F77B1AB84B3 /* Pods-KeenDialog_Tests-dummy.m */; };
+		9BD6DD825ED2C70F26DEC5CDEDFA737F /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25479F58B67AA43E092C7B156C1B5C1B /* ConstraintRelation.swift */; };
+		9BE8B5D7A0462439ED41BD75429AC430 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549471CD1FE3A1E1865DD172864918D3 /* ConstraintInsets.swift */; };
+		9E0F702D763AB587D25122338379E66C /* KeenAddressPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552F6C9CD7B66431AF434534E528B651 /* KeenAddressPicker.swift */; };
+		9F855E3C76ECB7344F522B3F52455443 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0116B84A6773B75FCBFCB479E740F0F3 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3FDA12BE441E95BC5685B7ED161B103 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D02329E74D733C03BF6BAE1F564481 /* ConstraintMakerFinalizable.swift */; };
+		A4D7ED71C64F9AF2C13929AC456BB8FF /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AB9BB47A2175181386A432C07253AE /* ConstraintMultiplierTarget.swift */; };
+		AAA61B2C9FC6E9CD327ADB33B26AC538 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E066869A95E00B949CBA4D2284C35F /* Typealiases.swift */; };
+		ACE282FA4BF1E52AF921423EEC9F3BD3 /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BF299D2EEB87E7DD02630E87B96224 /* ConstraintLayoutGuide+Extensions.swift */; };
+		AFD49272B4C5856607DFCE2AEDC21B59 /* KeenUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C37C6CD88169F1867A3DB236D691B7F /* KeenUtils.swift */; };
+		B06234995B56A9FB2162B43B3384DE37 /* Pods-KeenDialog_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BF12535DE93EBA979C64BF0CDADDEB7 /* Pods-KeenDialog_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0DE8DD556CBCEC476C014E4BA9421AE /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2975CA5A0D26BC84F3EE9912FEBDA795 /* ConstraintRelatableTarget.swift */; };
+		B702DF36D46E5701F4DD3CC1181F03F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		B800C2ABE558F686D25810E1B1F3C173 /* KeenActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBDC5587138EA259BB4F41DC7BC16A1 /* KeenActionSheet.swift */; };
+		BB0FC2553904A9ECE29DF7EEAAFAD523 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D990E0FED5B41C1F13AC6B08208A99B /* ConstraintConstantTarget.swift */; };
+		BC840B312DBD8EDDC3278A21E6D09C3F /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B200BD964F52F6693D4168248B8645 /* ConstraintOffsetTarget.swift */; };
+		BFB0D3E331ADD07DD5E0BB229BE42343 /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E13B89FFD81AACB7530769CA05EEA26B /* SnapKit-dummy.m */; };
+		C00669C8F53172DC7024357B944CC8C2 /* KeenDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646897BDFA4298C1B82A5CDAE43B0A44 /* KeenDatePicker.swift */; };
+		C50D997B061469737F7C76CC9AC161CE /* Pods-KeenDialog_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A89BCD46486A000DDD84825F15506795 /* Pods-KeenDialog_Example-dummy.m */; };
+		C76D10AD4DF77412BF7A3A90A31A3C5F /* KeenDialog-KeenDialog in Resources */ = {isa = PBXBuildFile; fileRef = A271542B6C89C46110A463D99B846792 /* KeenDialog-KeenDialog */; };
+		CFBB6E04B6CB2D64247D51C1E54D49B7 /* KeenToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A87DECA944E7179712FB8C787C8507 /* KeenToast.swift */; };
+		D08A8F7CB0166380E1FCB194384769C4 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464C01543F3BCEDEE51ABAA696513D0B /* LayoutConstraintItem.swift */; };
+		DA0ABCF06C5998A3D77D44331C7EEBAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		DA7115A64DE118358E4C905CDD85A2C6 /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9341666EAC154422A032092A7DC2D7 /* UILayoutSupport+Extensions.swift */; };
+		DAF3FB9C436BEB516082799A3697F586 /* Pods-KeenDialog_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4177D24D9E97D8641EB9D29CDFF4D8A1 /* Pods-KeenDialog_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB26F70CE6348FB7143E2A6704FD6F3C /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51E99894F75F00A281BE6A32FBDE495 /* ConstraintView.swift */; };
+		E5E0EEECF760797A13831B65DBF512A2 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724FB64349F5678CE1709979CF0DD952 /* ConstraintMakerRelatable.swift */; };
+		E7E4444393E24A54167C429826BC5FC6 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F460233F2A555D41511B6CCA66A124 /* ConstraintAttributes.swift */; };
+		E8E6AE5EE0035DBF2849147CB5D3E896 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9055CEA7890517265589BD23D73A49 /* ConstraintView+Extensions.swift */; };
+		EDFA21FF25247A3DA5990799DE290141 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE00ECC24C5CC6DC938204FF42AD0E5 /* ConstraintDSL.swift */; };
+		F0BB0C78504B12F43196D293B404AE0C /* KeenMenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7AD5F4778AB9200BF7B3D12371C984 /* KeenMenuList.swift */; };
+		F4DBBFB743F8AB8CA8333903206CE95C /* KeenDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E2AA3099B0BDC33F580F3B6C1579B324 /* KeenDialog.bundle */; };
+		F84D77FB21AEF1B0668341B342861FAA /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BD95F32F2E57D6B9100B77B93F013C /* ConstraintPriority.swift */; };
+		F8C1FFB3EB04586CF3FB924DA0DCC748 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250E41DBB680A3A2ECDDD2210311B230 /* ConstraintConfig.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6D7A1220ABD4D03A6C4813B2920FA815 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F71F87C1E6F2B1648CDE7977E094A299;
+			remoteInfo = "KeenDialog-KeenDialog";
+		};
+		86011CCE6C91D53B8A60AE16340066EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
+			remoteInfo = SnapKit;
+		};
+		A46598E978045C1EDBF256E775ABF0BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B38379E29C5B4AF9B6DA9B7C89146B1;
+			remoteInfo = KeenDialog;
+		};
+		C1F28E1E5C5DC914F754735AF59FB715 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55420B2AE173A93F2B1A77E36180EAA5;
+			remoteInfo = "Pods-KeenDialog_Example";
+		};
+		C45E406313FBCA97C13923030FAF2D84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
+			remoteInfo = SnapKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00A87DECA944E7179712FB8C787C8507 /* KeenToast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeenToast.swift; path = KeenDialog/Classes/KeenToast.swift; sourceTree = "<group>"; };
+		0116B84A6773B75FCBFCB479E740F0F3 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		09BF299D2EEB87E7DD02630E87B96224 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		11D02329E74D733C03BF6BAE1F564481 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		13F460233F2A555D41511B6CCA66A124 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		141BC33167429B9926FB24A17F01568C /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		15E7F155A9E6C4A7760D789006957EF0 /* KeenDialog-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KeenDialog-Info.plist"; sourceTree = "<group>"; };
+		17237996CB41786BA9CA3BB0C1C7ADC4 /* KeenHud.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeenHud.swift; path = KeenDialog/Classes/KeenHud.swift; sourceTree = "<group>"; };
+		186770751D1F327D5BF6B6C1DCC7F182 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		1BF12535DE93EBA979C64BF0CDADDEB7 /* Pods-KeenDialog_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KeenDialog_Tests-umbrella.h"; sourceTree = "<group>"; };
+		250E41DBB680A3A2ECDDD2210311B230 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
+		25479F58B67AA43E092C7B156C1B5C1B /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		2975CA5A0D26BC84F3EE9912FEBDA795 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		391A6F8B42D2CD885F8F3C4CE6859439 /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
+		3D705690D879064ED84970813189D8D4 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		3F6D63EE201743B72E48AB43FFC7DEC5 /* KeenDialog-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeenDialog-dummy.m"; sourceTree = "<group>"; };
+		40FBAF1F235749D7E4B995216872C950 /* Pods-KeenDialog_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KeenDialog_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4177D24D9E97D8641EB9D29CDFF4D8A1 /* Pods-KeenDialog_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KeenDialog_Example-umbrella.h"; sourceTree = "<group>"; };
+		464C01543F3BCEDEE51ABAA696513D0B /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		474AFC560A8B414B467174737DBC891A /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		47B200BD964F52F6693D4168248B8645 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		50380F281EC3EE769C85035CCEA77226 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		549471CD1FE3A1E1865DD172864918D3 /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
+		552F6C9CD7B66431AF434534E528B651 /* KeenAddressPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeenAddressPicker.swift; path = KeenDialog/Classes/KeenAddressPicker.swift; sourceTree = "<group>"; };
+		56006AA49A060CA2830F32CD6F394823 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		5A95E6E8FA4AF7A27F56EDA524160EE3 /* KeenAlertMsg.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeenAlertMsg.swift; path = KeenDialog/Classes/KeenAlertMsg.swift; sourceTree = "<group>"; };
+		5DEA1BBC88753B0C820C07B9E7FF3A01 /* Pods-KeenDialog_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KeenDialog_Example-frameworks.sh"; sourceTree = "<group>"; };
+		600CE378BF84AF374A0CEF5E9E0BAFDB /* Pods-KeenDialog_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KeenDialog_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6431ECF1C2FE95044DA55F77B1AB84B3 /* Pods-KeenDialog_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KeenDialog_Tests-dummy.m"; sourceTree = "<group>"; };
+		646897BDFA4298C1B82A5CDAE43B0A44 /* KeenDatePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeenDatePicker.swift; path = KeenDialog/Classes/KeenDatePicker.swift; sourceTree = "<group>"; };
+		6673058DD6A7C18D90DF6AEEA5AF1D8A /* address.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = address.plist; sourceTree = "<group>"; };
+		66C5188AE61F0E667CD9E7ED28CDD61C /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		6A9341666EAC154422A032092A7DC2D7 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		6C37C6CD88169F1867A3DB236D691B7F /* KeenUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeenUtils.swift; path = KeenDialog/Classes/KeenUtils.swift; sourceTree = "<group>"; };
+		6D990E0FED5B41C1F13AC6B08208A99B /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		724FB64349F5678CE1709979CF0DD952 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7889131C1139F96BBDA94CEE2E694763 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		7AE00ECC24C5CC6DC938204FF42AD0E5 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
+		7C21E0C93A1141A1E2EB51575500E27D /* SnapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.debug.xcconfig; sourceTree = "<group>"; };
+		7C2EC377264B25FB0E67D150E37E87CD /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		864CC427EFB2B23759A3EF4848C9385F /* Pods-KeenDialog_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KeenDialog_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		870C774AFF973D9283D58F1453719A13 /* ResourceBundle-KeenDialog-KeenDialog-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-KeenDialog-KeenDialog-Info.plist"; sourceTree = "<group>"; };
+		873EAFF7B7EEC5C00452EEF0BA10802A /* Pods-KeenDialog_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KeenDialog_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		8D9C363599306598274158D2F52C8BC4 /* KeenDialog.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = KeenDialog.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		90A8FDEBB27498629F22356E45D673F6 /* Pods-KeenDialog_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KeenDialog_Example.modulemap"; sourceTree = "<group>"; };
+		91164BE769DA144776663FBF46785561 /* ConstraintDirectionalInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsets.swift; path = Source/ConstraintDirectionalInsets.swift; sourceTree = "<group>"; };
+		91A53CAF547D71AEFABE49D91B4E6816 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		96E676BD845D7BEC3B2A5474E494F4C1 /* Pods-KeenDialog_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KeenDialog_Example.release.xcconfig"; sourceTree = "<group>"; };
+		9716AD15FADF38A93170E034F2BCE457 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		979486118B3E90C08386079D57962701 /* SnapKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B9A65BF13A73CFC0B39C80F032FBEAD /* KeenDialog */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KeenDialog; path = KeenDialog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F80EB7F84C2E986B8B4753DC0D773D7 /* KeenDialog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeenDialog.release.xcconfig; sourceTree = "<group>"; };
+		A1CD432F32277BB93DEAADA626ECEC5B /* SnapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.release.xcconfig; sourceTree = "<group>"; };
+		A271542B6C89C46110A463D99B846792 /* KeenDialog-KeenDialog */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "KeenDialog-KeenDialog"; path = KeenDialog.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		A51E99894F75F00A281BE6A32FBDE495 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
+		A7D358AA1606C7B2CDC8555485807E9E /* ConstraintDirectionalInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsetTarget.swift; path = Source/ConstraintDirectionalInsetTarget.swift; sourceTree = "<group>"; };
+		A8734F4B5A76F129D410C6647237AB3D /* Pods-KeenDialog_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KeenDialog_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A89BCD46486A000DDD84825F15506795 /* Pods-KeenDialog_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KeenDialog_Example-dummy.m"; sourceTree = "<group>"; };
+		AD7AD5F4778AB9200BF7B3D12371C984 /* KeenMenuList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeenMenuList.swift; path = KeenDialog/Classes/KeenMenuList.swift; sourceTree = "<group>"; };
+		ADF71FF68A1412425220BD1852508931 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		B322A02458D0E60A241D7664FC353D8C /* KeenDialog-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeenDialog-umbrella.h"; sourceTree = "<group>"; };
+		BCAA66130A06F7753E3B8A0C9AF9A68D /* KeenDialog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeenDialog.debug.xcconfig; sourceTree = "<group>"; };
+		BE0BE9F3D55FDB29EF516F6D6B1B6BCA /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		C17B0FD60107D6B1CA7B905AD9425ED5 /* KeenDialog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeenDialog.swift; path = KeenDialog/Classes/KeenDialog.swift; sourceTree = "<group>"; };
+		C4A46A8054577838D49C60142EB88B13 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		CB1D9F6F4E2364DFAF158E04AF5D5EAA /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		D038D2FAA2F6B073D1B64B8635F4E3E6 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		D2897A920C68FF657669945B47034D38 /* Pods-KeenDialog_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-KeenDialog_Tests"; path = Pods_KeenDialog_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4E066869A95E00B949CBA4D2284C35F /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
+		D55AFE9F742D4A25D5805E896D1612D8 /* KeenDialog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeenDialog-prefix.pch"; sourceTree = "<group>"; };
+		DA53494559A6157C9C897A9E374EF2FB /* KeenDialog.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KeenDialog.modulemap; sourceTree = "<group>"; };
+		DB4E2AAA692ACF213F5B994960127A73 /* Pods-KeenDialog_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KeenDialog_Tests.modulemap"; sourceTree = "<group>"; };
+		DC34781F9682FE6100872E64154F188D /* Pods-KeenDialog_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KeenDialog_Example-Info.plist"; sourceTree = "<group>"; };
+		DD2D80DAB3AC6EF44A36A3F139B38B32 /* Pods-KeenDialog_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KeenDialog_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E00D96519AE8BF91B7A6104FA32A6196 /* Pods-KeenDialog_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KeenDialog_Tests-Info.plist"; sourceTree = "<group>"; };
+		E13B89FFD81AACB7530769CA05EEA26B /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		E14A09DC3AD8CA84464FEC37F0FC99D1 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		E2AA3099B0BDC33F580F3B6C1579B324 /* KeenDialog.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = KeenDialog.bundle; path = KeenDialog/Assets/KeenDialog.bundle; sourceTree = "<group>"; };
+		E2C3B0B200350EAC8F42EF635FF31BD1 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		E43F10DE451FED17810D9B5C237324A5 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		ECBDC5587138EA259BB4F41DC7BC16A1 /* KeenActionSheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeenActionSheet.swift; path = KeenDialog/Classes/KeenActionSheet.swift; sourceTree = "<group>"; };
+		EE9055CEA7890517265589BD23D73A49 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		F02F169F5DA9327C1C2801663C9C7AA9 /* Pods-KeenDialog_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KeenDialog_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F0BD95F32F2E57D6B9100B77B93F013C /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
+		F44C5B72775F6AF0891BF331F32FE10D /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		F7AB9BB47A2175181386A432C07253AE /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		FC7BB94B9286D8EC6A0CB77EBFAD4320 /* Pods-KeenDialog_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-KeenDialog_Example"; path = Pods_KeenDialog_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B01B4C094C806C68259C65C95439F52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A01640355FC1FB1095AB862F08B8161 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86FFF0471C00A761C3A28502DC32C95F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B702DF36D46E5701F4DD3CC1181F03F7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		992D0927A6324EC5B1C7E5B066005DB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0DF1539F25BFB71CD9B1C0ED0E2F50E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AD66316BD607789392EACDB6B7F502A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5292A4288A784E304064879E1AF3900 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA0ABCF06C5998A3D77D44331C7EEBAB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		148AF8B96BC800E4AAB75E7067D9FCA3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA53494559A6157C9C897A9E374EF2FB /* KeenDialog.modulemap */,
+				3F6D63EE201743B72E48AB43FFC7DEC5 /* KeenDialog-dummy.m */,
+				15E7F155A9E6C4A7760D789006957EF0 /* KeenDialog-Info.plist */,
+				D55AFE9F742D4A25D5805E896D1612D8 /* KeenDialog-prefix.pch */,
+				B322A02458D0E60A241D7664FC353D8C /* KeenDialog-umbrella.h */,
+				BCAA66130A06F7753E3B8A0C9AF9A68D /* KeenDialog.debug.xcconfig */,
+				9F80EB7F84C2E986B8B4753DC0D773D7 /* KeenDialog.release.xcconfig */,
+				870C774AFF973D9283D58F1453719A13 /* ResourceBundle-KeenDialog-KeenDialog-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/KeenDialog";
+			sourceTree = "<group>";
+		};
+		24EBA7CCBBBAB8A10048CA79F7430667 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E548E11DA15C27A9CAFBCD8487983A13 /* KeenDialog */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		2DD38EC01DA7E20874DFD4655AD14CEB /* KeenDialog.bundle */ = {
+			isa = PBXGroup;
+			children = (
+				6673058DD6A7C18D90DF6AEEA5AF1D8A /* address.plist */,
+			);
+			name = KeenDialog.bundle;
+			path = KeenDialog/Assets/KeenDialog.bundle;
+			sourceTree = "<group>";
+		};
+		31D4C063620C9BCAFC87A1D865EFC8D1 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				8D9C363599306598274158D2F52C8BC4 /* KeenDialog.podspec */,
+				186770751D1F327D5BF6B6C1DCC7F182 /* LICENSE */,
+				ADF71FF68A1412425220BD1852508931 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		44729B10862081B64E583812682D1BDE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6F19B81042351D6D9981B6C6527B193 /* Pods-KeenDialog_Example */,
+				A68C9D1A956903F1AD8A58FEBEB25FD6 /* Pods-KeenDialog_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7F02E3862C6E84203E8324D9D0088797 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				50380F281EC3EE769C85035CCEA77226 /* Constraint.swift */,
+				13F460233F2A555D41511B6CCA66A124 /* ConstraintAttributes.swift */,
+				250E41DBB680A3A2ECDDD2210311B230 /* ConstraintConfig.swift */,
+				6D990E0FED5B41C1F13AC6B08208A99B /* ConstraintConstantTarget.swift */,
+				CB1D9F6F4E2364DFAF158E04AF5D5EAA /* ConstraintDescription.swift */,
+				91164BE769DA144776663FBF46785561 /* ConstraintDirectionalInsets.swift */,
+				A7D358AA1606C7B2CDC8555485807E9E /* ConstraintDirectionalInsetTarget.swift */,
+				7AE00ECC24C5CC6DC938204FF42AD0E5 /* ConstraintDSL.swift */,
+				549471CD1FE3A1E1865DD172864918D3 /* ConstraintInsets.swift */,
+				7C2EC377264B25FB0E67D150E37E87CD /* ConstraintInsetTarget.swift */,
+				474AFC560A8B414B467174737DBC891A /* ConstraintItem.swift */,
+				66C5188AE61F0E667CD9E7ED28CDD61C /* ConstraintLayoutGuide.swift */,
+				09BF299D2EEB87E7DD02630E87B96224 /* ConstraintLayoutGuide+Extensions.swift */,
+				BE0BE9F3D55FDB29EF516F6D6B1B6BCA /* ConstraintLayoutGuideDSL.swift */,
+				3D705690D879064ED84970813189D8D4 /* ConstraintLayoutSupport.swift */,
+				C4A46A8054577838D49C60142EB88B13 /* ConstraintLayoutSupportDSL.swift */,
+				141BC33167429B9926FB24A17F01568C /* ConstraintMaker.swift */,
+				E2C3B0B200350EAC8F42EF635FF31BD1 /* ConstraintMakerEditable.swift */,
+				E43F10DE451FED17810D9B5C237324A5 /* ConstraintMakerExtendable.swift */,
+				11D02329E74D733C03BF6BAE1F564481 /* ConstraintMakerFinalizable.swift */,
+				91A53CAF547D71AEFABE49D91B4E6816 /* ConstraintMakerPriortizable.swift */,
+				724FB64349F5678CE1709979CF0DD952 /* ConstraintMakerRelatable.swift */,
+				F7AB9BB47A2175181386A432C07253AE /* ConstraintMultiplierTarget.swift */,
+				47B200BD964F52F6693D4168248B8645 /* ConstraintOffsetTarget.swift */,
+				F0BD95F32F2E57D6B9100B77B93F013C /* ConstraintPriority.swift */,
+				9716AD15FADF38A93170E034F2BCE457 /* ConstraintPriorityTarget.swift */,
+				2975CA5A0D26BC84F3EE9912FEBDA795 /* ConstraintRelatableTarget.swift */,
+				25479F58B67AA43E092C7B156C1B5C1B /* ConstraintRelation.swift */,
+				A51E99894F75F00A281BE6A32FBDE495 /* ConstraintView.swift */,
+				EE9055CEA7890517265589BD23D73A49 /* ConstraintView+Extensions.swift */,
+				56006AA49A060CA2830F32CD6F394823 /* ConstraintViewDSL.swift */,
+				D038D2FAA2F6B073D1B64B8635F4E3E6 /* Debugging.swift */,
+				F44C5B72775F6AF0891BF331F32FE10D /* LayoutConstraint.swift */,
+				464C01543F3BCEDEE51ABAA696513D0B /* LayoutConstraintItem.swift */,
+				D4E066869A95E00B949CBA4D2284C35F /* Typealiases.swift */,
+				6A9341666EAC154422A032092A7DC2D7 /* UILayoutSupport+Extensions.swift */,
+				843EFF0C650682C304D518A9092EE9FD /* Support Files */,
+			);
+			name = SnapKit;
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		843EFF0C650682C304D518A9092EE9FD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7889131C1139F96BBDA94CEE2E694763 /* SnapKit.modulemap */,
+				E13B89FFD81AACB7530769CA05EEA26B /* SnapKit-dummy.m */,
+				391A6F8B42D2CD885F8F3C4CE6859439 /* SnapKit-Info.plist */,
+				E14A09DC3AD8CA84464FEC37F0FC99D1 /* SnapKit-prefix.pch */,
+				0116B84A6773B75FCBFCB479E740F0F3 /* SnapKit-umbrella.h */,
+				7C21E0C93A1141A1E2EB51575500E27D /* SnapKit.debug.xcconfig */,
+				A1CD432F32277BB93DEAADA626ECEC5B /* SnapKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
+		A68C9D1A956903F1AD8A58FEBEB25FD6 /* Pods-KeenDialog_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DB4E2AAA692ACF213F5B994960127A73 /* Pods-KeenDialog_Tests.modulemap */,
+				F02F169F5DA9327C1C2801663C9C7AA9 /* Pods-KeenDialog_Tests-acknowledgements.markdown */,
+				600CE378BF84AF374A0CEF5E9E0BAFDB /* Pods-KeenDialog_Tests-acknowledgements.plist */,
+				6431ECF1C2FE95044DA55F77B1AB84B3 /* Pods-KeenDialog_Tests-dummy.m */,
+				E00D96519AE8BF91B7A6104FA32A6196 /* Pods-KeenDialog_Tests-Info.plist */,
+				1BF12535DE93EBA979C64BF0CDADDEB7 /* Pods-KeenDialog_Tests-umbrella.h */,
+				40FBAF1F235749D7E4B995216872C950 /* Pods-KeenDialog_Tests.debug.xcconfig */,
+				864CC427EFB2B23759A3EF4848C9385F /* Pods-KeenDialog_Tests.release.xcconfig */,
+			);
+			name = "Pods-KeenDialog_Tests";
+			path = "Target Support Files/Pods-KeenDialog_Tests";
+			sourceTree = "<group>";
+		};
+		BA22F08D059965C9A09F78196176CEDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F02E3862C6E84203E8324D9D0088797 /* SnapKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C6F19B81042351D6D9981B6C6527B193 /* Pods-KeenDialog_Example */ = {
+			isa = PBXGroup;
+			children = (
+				90A8FDEBB27498629F22356E45D673F6 /* Pods-KeenDialog_Example.modulemap */,
+				DD2D80DAB3AC6EF44A36A3F139B38B32 /* Pods-KeenDialog_Example-acknowledgements.markdown */,
+				873EAFF7B7EEC5C00452EEF0BA10802A /* Pods-KeenDialog_Example-acknowledgements.plist */,
+				A89BCD46486A000DDD84825F15506795 /* Pods-KeenDialog_Example-dummy.m */,
+				5DEA1BBC88753B0C820C07B9E7FF3A01 /* Pods-KeenDialog_Example-frameworks.sh */,
+				DC34781F9682FE6100872E64154F188D /* Pods-KeenDialog_Example-Info.plist */,
+				4177D24D9E97D8641EB9D29CDFF4D8A1 /* Pods-KeenDialog_Example-umbrella.h */,
+				A8734F4B5A76F129D410C6647237AB3D /* Pods-KeenDialog_Example.debug.xcconfig */,
+				96E676BD845D7BEC3B2A5474E494F4C1 /* Pods-KeenDialog_Example.release.xcconfig */,
+			);
+			name = "Pods-KeenDialog_Example";
+			path = "Target Support Files/Pods-KeenDialog_Example";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				24EBA7CCBBBAB8A10048CA79F7430667 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				BA22F08D059965C9A09F78196176CEDB /* Pods */,
+				F20BD9DD75900D2B3F697246BBFF597F /* Products */,
+				44729B10862081B64E583812682D1BDE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E548E11DA15C27A9CAFBCD8487983A13 /* KeenDialog */ = {
+			isa = PBXGroup;
+			children = (
+				ECBDC5587138EA259BB4F41DC7BC16A1 /* KeenActionSheet.swift */,
+				552F6C9CD7B66431AF434534E528B651 /* KeenAddressPicker.swift */,
+				5A95E6E8FA4AF7A27F56EDA524160EE3 /* KeenAlertMsg.swift */,
+				646897BDFA4298C1B82A5CDAE43B0A44 /* KeenDatePicker.swift */,
+				E2AA3099B0BDC33F580F3B6C1579B324 /* KeenDialog.bundle */,
+				C17B0FD60107D6B1CA7B905AD9425ED5 /* KeenDialog.swift */,
+				17237996CB41786BA9CA3BB0C1C7ADC4 /* KeenHud.swift */,
+				AD7AD5F4778AB9200BF7B3D12371C984 /* KeenMenuList.swift */,
+				00A87DECA944E7179712FB8C787C8507 /* KeenToast.swift */,
+				6C37C6CD88169F1867A3DB236D691B7F /* KeenUtils.swift */,
+				2DD38EC01DA7E20874DFD4655AD14CEB /* KeenDialog.bundle */,
+				31D4C063620C9BCAFC87A1D865EFC8D1 /* Pod */,
+				148AF8B96BC800E4AAB75E7067D9FCA3 /* Support Files */,
+			);
+			name = KeenDialog;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		F20BD9DD75900D2B3F697246BBFF597F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B9A65BF13A73CFC0B39C80F032FBEAD /* KeenDialog */,
+				A271542B6C89C46110A463D99B846792 /* KeenDialog-KeenDialog */,
+				FC7BB94B9286D8EC6A0CB77EBFAD4320 /* Pods-KeenDialog_Example */,
+				D2897A920C68FF657669945B47034D38 /* Pods-KeenDialog_Tests */,
+				979486118B3E90C08386079D57962701 /* SnapKit */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		10771544C1018AEF2FCE273F216856A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B06234995B56A9FB2162B43B3384DE37 /* Pods-KeenDialog_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70570AA03013865E3FD8F6B009B1DCA7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF3FB9C436BEB516082799A3697F586 /* Pods-KeenDialog_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99671F8DD9CC049528B588B80CAA2F38 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EF58AEC817CDEA73C7437961FCAA63C /* KeenDialog-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAA5633B6B62C4ADE6A65A2379938293 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F855E3C76ECB7344F522B3F52455443 /* SnapKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CB57B3437EEAAE4814049093A42D77C /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildPhases = (
+				BAA5633B6B62C4ADE6A65A2379938293 /* Headers */,
+				83C6AE32A8A903250516F77B30ED6EF1 /* Sources */,
+				86FFF0471C00A761C3A28502DC32C95F /* Frameworks */,
+				C0436F66BDDFE8C4D75A1DD65998377D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = 979486118B3E90C08386079D57962701 /* SnapKit */;
+			productType = "com.apple.product-type.framework";
+		};
+		3B38379E29C5B4AF9B6DA9B7C89146B1 /* KeenDialog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3616D62C0643319FD7852B7E0686C622 /* Build configuration list for PBXNativeTarget "KeenDialog" */;
+			buildPhases = (
+				99671F8DD9CC049528B588B80CAA2F38 /* Headers */,
+				A784490F30AFA48015F5E92F40FC09BD /* Sources */,
+				1B01B4C094C806C68259C65C95439F52 /* Frameworks */,
+				7967E01C82BEF83BDE44B8E5B47C88A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				341C55F4E75A6ACD128D1C843B4DD89D /* PBXTargetDependency */,
+				D4C0F84C1F781F749428373333B0C142 /* PBXTargetDependency */,
+			);
+			name = KeenDialog;
+			productName = KeenDialog;
+			productReference = 9B9A65BF13A73CFC0B39C80F032FBEAD /* KeenDialog */;
+			productType = "com.apple.product-type.framework";
+		};
+		55420B2AE173A93F2B1A77E36180EAA5 /* Pods-KeenDialog_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C3D5CAB5D7C0F79B5465B3FF76976CC /* Build configuration list for PBXNativeTarget "Pods-KeenDialog_Example" */;
+			buildPhases = (
+				70570AA03013865E3FD8F6B009B1DCA7 /* Headers */,
+				D6966699C8B00570890AAF39108A8ED1 /* Sources */,
+				A0DF1539F25BFB71CD9B1C0ED0E2F50E /* Frameworks */,
+				ED2E0855CB9E621B8E12941C4010C2C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				896EC0E4D2C1F00E3B4A24B3481EBD0E /* PBXTargetDependency */,
+				1D642B006AEFEBEE0A3D5404491C210D /* PBXTargetDependency */,
+			);
+			name = "Pods-KeenDialog_Example";
+			productName = Pods_KeenDialog_Example;
+			productReference = FC7BB94B9286D8EC6A0CB77EBFAD4320 /* Pods-KeenDialog_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		76A4050B2EB210EF6A1A926B149F4DA2 /* Pods-KeenDialog_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6E053833E851F200C00279FA83286A7 /* Build configuration list for PBXNativeTarget "Pods-KeenDialog_Tests" */;
+			buildPhases = (
+				10771544C1018AEF2FCE273F216856A5 /* Headers */,
+				960C02EA2018CA3508D5F86B40724D32 /* Sources */,
+				B5292A4288A784E304064879E1AF3900 /* Frameworks */,
+				1B75A588933F248357D08BBCF5C6F59F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F898D0A6B097EE5523AD0156664F6FA /* PBXTargetDependency */,
+			);
+			name = "Pods-KeenDialog_Tests";
+			productName = Pods_KeenDialog_Tests;
+			productReference = D2897A920C68FF657669945B47034D38 /* Pods-KeenDialog_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+		F71F87C1E6F2B1648CDE7977E094A299 /* KeenDialog-KeenDialog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C374DC1CD41164846B68CA51810E417B /* Build configuration list for PBXNativeTarget "KeenDialog-KeenDialog" */;
+			buildPhases = (
+				4383D9CBA128EF074DBD59AF25B512B8 /* Sources */,
+				992D0927A6324EC5B1C7E5B066005DB6 /* Frameworks */,
+				708FAA3A6B05F76450B0B7EF6AEE60DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KeenDialog-KeenDialog";
+			productName = KeenDialog;
+			productReference = A271542B6C89C46110A463D99B846792 /* KeenDialog-KeenDialog */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = F20BD9DD75900D2B3F697246BBFF597F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B38379E29C5B4AF9B6DA9B7C89146B1 /* KeenDialog */,
+				F71F87C1E6F2B1648CDE7977E094A299 /* KeenDialog-KeenDialog */,
+				55420B2AE173A93F2B1A77E36180EAA5 /* Pods-KeenDialog_Example */,
+				76A4050B2EB210EF6A1A926B149F4DA2 /* Pods-KeenDialog_Tests */,
+				19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B75A588933F248357D08BBCF5C6F59F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		708FAA3A6B05F76450B0B7EF6AEE60DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33CD4E1BBF8095BD5253834E16B4C50E /* address.plist in Resources */,
+				F4DBBFB743F8AB8CA8333903206CE95C /* KeenDialog.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7967E01C82BEF83BDE44B8E5B47C88A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C76D10AD4DF77412BF7A3A90A31A3C5F /* KeenDialog-KeenDialog in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0436F66BDDFE8C4D75A1DD65998377D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED2E0855CB9E621B8E12941C4010C2C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4383D9CBA128EF074DBD59AF25B512B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83C6AE32A8A903250516F77B30ED6EF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7996AC90DD882459365BCA55627BA249 /* Constraint.swift in Sources */,
+				E7E4444393E24A54167C429826BC5FC6 /* ConstraintAttributes.swift in Sources */,
+				F8C1FFB3EB04586CF3FB924DA0DCC748 /* ConstraintConfig.swift in Sources */,
+				BB0FC2553904A9ECE29DF7EEAAFAD523 /* ConstraintConstantTarget.swift in Sources */,
+				7AE06D566D0640BFA728D9DF4DF9D973 /* ConstraintDescription.swift in Sources */,
+				79D0F6CD489E99521AA79DC420BA9810 /* ConstraintDirectionalInsets.swift in Sources */,
+				614F524B122C11A705DE4DE5F6F3F2D8 /* ConstraintDirectionalInsetTarget.swift in Sources */,
+				EDFA21FF25247A3DA5990799DE290141 /* ConstraintDSL.swift in Sources */,
+				9BE8B5D7A0462439ED41BD75429AC430 /* ConstraintInsets.swift in Sources */,
+				92578072DAD449CA36D06B1F0EE16150 /* ConstraintInsetTarget.swift in Sources */,
+				886022970D1B0DB13BB336DC2BC7B0A2 /* ConstraintItem.swift in Sources */,
+				0E789123A4568C5181959C6D3316F74C /* ConstraintLayoutGuide.swift in Sources */,
+				ACE282FA4BF1E52AF921423EEC9F3BD3 /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				56904E0031978C0919ACC9059C564AD3 /* ConstraintLayoutGuideDSL.swift in Sources */,
+				695BE300B2F0D71171C8D1E02A069841 /* ConstraintLayoutSupport.swift in Sources */,
+				1DD7D68E57BCC19C594BD7488E85A367 /* ConstraintLayoutSupportDSL.swift in Sources */,
+				32C5EA5B28C89D7B7FE296CCA29CB4F2 /* ConstraintMaker.swift in Sources */,
+				058B8062CED1FA8F307E1238B341BF5C /* ConstraintMakerEditable.swift in Sources */,
+				64B0A31CDE6EF3E9C53F823AF5616A0B /* ConstraintMakerExtendable.swift in Sources */,
+				A3FDA12BE441E95BC5685B7ED161B103 /* ConstraintMakerFinalizable.swift in Sources */,
+				28F33465D39C173A5AAF7125FD325B7E /* ConstraintMakerPriortizable.swift in Sources */,
+				E5E0EEECF760797A13831B65DBF512A2 /* ConstraintMakerRelatable.swift in Sources */,
+				A4D7ED71C64F9AF2C13929AC456BB8FF /* ConstraintMultiplierTarget.swift in Sources */,
+				BC840B312DBD8EDDC3278A21E6D09C3F /* ConstraintOffsetTarget.swift in Sources */,
+				F84D77FB21AEF1B0668341B342861FAA /* ConstraintPriority.swift in Sources */,
+				74DA0963E9D0FC08F1A48B5D7C6711C9 /* ConstraintPriorityTarget.swift in Sources */,
+				B0DE8DD556CBCEC476C014E4BA9421AE /* ConstraintRelatableTarget.swift in Sources */,
+				9BD6DD825ED2C70F26DEC5CDEDFA737F /* ConstraintRelation.swift in Sources */,
+				DB26F70CE6348FB7143E2A6704FD6F3C /* ConstraintView.swift in Sources */,
+				E8E6AE5EE0035DBF2849147CB5D3E896 /* ConstraintView+Extensions.swift in Sources */,
+				6BA226DA518838637CEFFED664043DF8 /* ConstraintViewDSL.swift in Sources */,
+				62142958C15157D2161959F3984E7179 /* Debugging.swift in Sources */,
+				4500F66558D26C28D725F8A20E4EFF60 /* LayoutConstraint.swift in Sources */,
+				D08A8F7CB0166380E1FCB194384769C4 /* LayoutConstraintItem.swift in Sources */,
+				BFB0D3E331ADD07DD5E0BB229BE42343 /* SnapKit-dummy.m in Sources */,
+				AAA61B2C9FC6E9CD327ADB33B26AC538 /* Typealiases.swift in Sources */,
+				DA7115A64DE118358E4C905CDD85A2C6 /* UILayoutSupport+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		960C02EA2018CA3508D5F86B40724D32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A1D7335A91F02CF17B9104FE74F2447 /* Pods-KeenDialog_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A784490F30AFA48015F5E92F40FC09BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B800C2ABE558F686D25810E1B1F3C173 /* KeenActionSheet.swift in Sources */,
+				9E0F702D763AB587D25122338379E66C /* KeenAddressPicker.swift in Sources */,
+				5699B80B31CB0FDAB76051D99F7DDB19 /* KeenAlertMsg.swift in Sources */,
+				C00669C8F53172DC7024357B944CC8C2 /* KeenDatePicker.swift in Sources */,
+				60ECA4520BFF3E1F89AB8FFB29BE36A0 /* KeenDialog.swift in Sources */,
+				4A7033A0B65046C050F837CA4BB5AEEF /* KeenDialog-dummy.m in Sources */,
+				1754E2865AEA479A11278B40BE36F847 /* KeenHud.swift in Sources */,
+				F0BB0C78504B12F43196D293B404AE0C /* KeenMenuList.swift in Sources */,
+				CFBB6E04B6CB2D64247D51C1E54D49B7 /* KeenToast.swift in Sources */,
+				AFD49272B4C5856607DFCE2AEDC21B59 /* KeenUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6966699C8B00570890AAF39108A8ED1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C50D997B061469737F7C76CC9AC161CE /* Pods-KeenDialog_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D642B006AEFEBEE0A3D5404491C210D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
+			targetProxy = 86011CCE6C91D53B8A60AE16340066EC /* PBXContainerItemProxy */;
+		};
+		341C55F4E75A6ACD128D1C843B4DD89D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "KeenDialog-KeenDialog";
+			target = F71F87C1E6F2B1648CDE7977E094A299 /* KeenDialog-KeenDialog */;
+			targetProxy = 6D7A1220ABD4D03A6C4813B2920FA815 /* PBXContainerItemProxy */;
+		};
+		4F898D0A6B097EE5523AD0156664F6FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-KeenDialog_Example";
+			target = 55420B2AE173A93F2B1A77E36180EAA5 /* Pods-KeenDialog_Example */;
+			targetProxy = C1F28E1E5C5DC914F754735AF59FB715 /* PBXContainerItemProxy */;
+		};
+		896EC0E4D2C1F00E3B4A24B3481EBD0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeenDialog;
+			target = 3B38379E29C5B4AF9B6DA9B7C89146B1 /* KeenDialog */;
+			targetProxy = A46598E978045C1EDBF256E775ABF0BA /* PBXContainerItemProxy */;
+		};
+		D4C0F84C1F781F749428373333B0C142 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
+			targetProxy = C45E406313FBCA97C13923030FAF2D84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0BD284D086B80C3A60379BB086198895 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCAA66130A06F7753E3B8A0C9AF9A68D /* KeenDialog.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KeenDialog/KeenDialog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KeenDialog/KeenDialog-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KeenDialog/KeenDialog.modulemap";
+				PRODUCT_MODULE_NAME = KeenDialog;
+				PRODUCT_NAME = KeenDialog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2C167E37D190DF740A03F65A9682AFC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C21E0C93A1141A1E2EB51575500E27D /* SnapKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3B5F1B8110259D13BB8EDD7C61FD03A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8734F4B5A76F129D410C6647237AB3D /* Pods-KeenDialog_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KeenDialog_Example/Pods-KeenDialog_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KeenDialog_Example/Pods-KeenDialog_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4AEB1D939F3DD2C632500A8BE8117825 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40FBAF1F235749D7E4B995216872C950 /* Pods-KeenDialog_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KeenDialog_Tests/Pods-KeenDialog_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KeenDialog_Tests/Pods-KeenDialog_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		548DBCBA88E7BD5E59C8D93F0A166744 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96E676BD845D7BEC3B2A5474E494F4C1 /* Pods-KeenDialog_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KeenDialog_Example/Pods-KeenDialog_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KeenDialog_Example/Pods-KeenDialog_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		72AD1E99382F68E92C35175A897F154A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F80EB7F84C2E986B8B4753DC0D773D7 /* KeenDialog.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KeenDialog/KeenDialog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KeenDialog/KeenDialog-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KeenDialog/KeenDialog.modulemap";
+				PRODUCT_MODULE_NAME = KeenDialog;
+				PRODUCT_NAME = KeenDialog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		74FB9D197FE2AD05756D4773194888BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCAA66130A06F7753E3B8A0C9AF9A68D /* KeenDialog.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/KeenDialog";
+				IBSC_MODULE = KeenDialog;
+				INFOPLIST_FILE = "Target Support Files/KeenDialog/ResourceBundle-KeenDialog-KeenDialog-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = KeenDialog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		7A1F0002769F0070765944FCDE92A640 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F80EB7F84C2E986B8B4753DC0D773D7 /* KeenDialog.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/KeenDialog";
+				IBSC_MODULE = KeenDialog;
+				INFOPLIST_FILE = "Target Support Files/KeenDialog/ResourceBundle-KeenDialog-KeenDialog-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = KeenDialog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D6B95D5CDBB2D04CE9FAA648BFD529F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1CD432F32277BB93DEAADA626ECEC5B /* SnapKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E8F2739CC2AD9EFEAF23791287261780 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 864CC427EFB2B23759A3EF4848C9385F /* Pods-KeenDialog_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KeenDialog_Tests/Pods-KeenDialog_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KeenDialog_Tests/Pods-KeenDialog_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3616D62C0643319FD7852B7E0686C622 /* Build configuration list for PBXNativeTarget "KeenDialog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BD284D086B80C3A60379BB086198895 /* Debug */,
+				72AD1E99382F68E92C35175A897F154A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CB57B3437EEAAE4814049093A42D77C /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C167E37D190DF740A03F65A9682AFC7 /* Debug */,
+				D6B95D5CDBB2D04CE9FAA648BFD529F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C3D5CAB5D7C0F79B5465B3FF76976CC /* Build configuration list for PBXNativeTarget "Pods-KeenDialog_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B5F1B8110259D13BB8EDD7C61FD03A8 /* Debug */,
+				548DBCBA88E7BD5E59C8D93F0A166744 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C374DC1CD41164846B68CA51810E417B /* Build configuration list for PBXNativeTarget "KeenDialog-KeenDialog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74FB9D197FE2AD05756D4773194888BF /* Debug */,
+				7A1F0002769F0070765944FCDE92A640 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6E053833E851F200C00279FA83286A7 /* Build configuration list for PBXNativeTarget "Pods-KeenDialog_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AEB1D939F3DD2C632500A8BE8117825 /* Debug */,
+				E8F2739CC2AD9EFEAF23791287261780 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

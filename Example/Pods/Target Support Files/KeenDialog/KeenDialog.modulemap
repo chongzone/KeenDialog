@@ -1,0 +1,6 @@
+framework module KeenDialog {
+  umbrella header "KeenDialog-umbrella.h"
+
+  export *
+  module * { export * }
+}

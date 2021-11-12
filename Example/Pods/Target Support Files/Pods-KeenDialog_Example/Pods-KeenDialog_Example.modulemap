@@ -1,0 +1,6 @@
+framework module Pods_KeenDialog_Example {
+  umbrella header "Pods-KeenDialog_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

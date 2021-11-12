@@ -1,0 +1,23 @@
+PODS:
+  - KeenDialog (1.0.0):
+    - SnapKit
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - KeenDialog (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
+
+EXTERNAL SOURCES:
+  KeenDialog:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  KeenDialog: 0371c54d4e0e6116321520e9b84eb87b3da96447
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: a0b415d7bb1b07e1106c71c13b538a4c9208a9d5
+
+COCOAPODS: 1.11.2
