@@ -43,31 +43,39 @@ class ViewController: UITableViewController {
     
     override func numberOfSections(in tableView: UITableView) -> Int { 1 }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { 20 }
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { 22 }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "KeenDialog", for: indexPath)
         switch indexPath.row {
-        case 0: cell.textLabel?.text = "alert 弹窗 1"
-        case 1: cell.textLabel?.text = "alert 弹窗 2"
-        case 2: cell.textLabel?.text = "alert 弹窗 3"
-        case 3: cell.textLabel?.text = "alert 弹窗 4"
-        case 4: cell.textLabel?.text = "alert 弹窗 5"
-        case 5: cell.textLabel?.text = "alert 弹窗 6"
-        case 6: cell.textLabel?.text = "alert 弹窗 7"
-        case 7: cell.textLabel?.text = "actionSheet 弹窗 1"
-        case 8: cell.textLabel?.text = "actionSheet 弹窗 2"
-        case 9: cell.textLabel?.text = "actionSheet 弹窗 3"
-        case 10: cell.textLabel?.text = "菜单弹窗 1"
-        case 11: cell.textLabel?.text = "菜单弹窗 2"
-        case 12: cell.textLabel?.text = "hud 加载指示器 1"
-        case 13: cell.textLabel?.text = "hud 加载指示器 2"
-        case 14: cell.textLabel?.text = "hud 加载指示器 3"
-        case 15: cell.textLabel?.text = "日期选择弹窗"
-        case 16: cell.textLabel?.text = "地址选择弹窗"
-        case 17: cell.textLabel?.text = "toast 指示器"
-        case 18: cell.textLabel?.text = "drop 下拉弹窗 1"
-        default: cell.textLabel?.text = "drop 下拉弹窗 2"
+        case 0: cell.textLabel?.text = "alert 弹窗只有消息"
+        case 1: cell.textLabel?.text = "alert 弹窗有标题、消息"
+        case 2: cell.textLabel?.text = "alert 弹窗有标题、自定义视图"
+        case 3: cell.textLabel?.text = "alert 弹窗有标题、消息、自定义视图"
+        case 4: cell.textLabel?.text = "alert 弹窗有标题、消息、自定义视图"
+        case 5: cell.textLabel?.text = "alert 弹窗有标题、消息、自定义视图"
+        case 6: cell.textLabel?.text = "alert 弹窗只有自定义视图"
+            
+        case 7: cell.textLabel?.text = "actionSheet 弹窗有子标题"
+        case 8: cell.textLabel?.text = "actionSheet 弹窗默认标记某个 item"
+        case 9: cell.textLabel?.text = "actionSheet 弹窗标题过多滑动展示"
+
+        case 10: cell.textLabel?.text = "菜单弹窗箭头在上面"
+        case 11: cell.textLabel?.text = "菜单弹窗在下面"
+            
+        case 12: cell.textLabel?.text = "日期选择弹窗"
+        case 13: cell.textLabel?.text = "地址选择弹窗"
+            
+        case 14: cell.textLabel?.text = "toast 指示器顶部"
+        case 15: cell.textLabel?.text = "toast 指示器中间"
+        case 16: cell.textLabel?.text = "toast 指示器底部"
+            
+        case 17: cell.textLabel?.text = "hud 加载指示器菊花加载"
+        case 18: cell.textLabel?.text = "hud 加载指示器环形加载"
+        case 19: cell.textLabel?.text = "hud 加载指示器定义属性参数"
+            
+        case 20: cell.textLabel?.text = "drop 下拉弹窗从屏幕顶部开始布局"
+        default: cell.textLabel?.text = "drop 下拉弹窗控制器导航栏开始布局"
         }
         return cell
     }
@@ -87,14 +95,17 @@ class ViewController: UITableViewController {
                 })
         case 2:
             let view = UITextField()
-            view.textColor = .white
+            view.textColor = .black
+            view.font = UIFont.systemFont(ofSize: 18, weight: .medium)
             view.borderStyle = .roundedRect
+            view.keyboardType = .phonePad
             view.placeholder = "自定义视图之文本框"
             var attri = KeenAlertMsgAttributes()
             attri.position = .bottom
             attri.customView = view
             attri.customViewInset = UIEdgeInsets(top: 0, left: 15, bottom: 20, right: 15)
-            attri.customViewHeight = 100
+            attri.customViewHeight = 150
+            attri.keyboardMargin = 40
             attri.observerKeyboard = true
             showAlert(
                 title: "乔巴语录",
@@ -173,31 +184,6 @@ class ViewController: UITableViewController {
                 self.selectIndex = index
             }, attributes: attri)
         case 12:
-            showHud()
-            /// 模拟请求耗时
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {[weak self] in
-                self?.dismissHud()
-            }
-        case 13:
-            showHud(title: "正在提交", style: .torus)
-            /// 模拟请求耗时
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {[weak self] in
-                self?.dismissHud()
-            }
-        case 14:
-            var attri = KeenHudAttributes()
-            attri.systemColor = .red
-            showHud(
-                title: "正在提交",
-                style: .system,
-                attributes: attri,
-                aView: view
-            )
-            /// 模拟请求耗时
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {[weak self] in
-                self?.dismissHud(self?.view)
-            }
-        case 15:
             /// 这里只做 年月日 展示 其他类似
             var attri = KeenDatePickerAttributes()
             attri.autoRecord = true
@@ -211,10 +197,11 @@ class ViewController: UITableViewController {
                 doneTitle: "确定",
                 callback: { value in
                 print("value \(value)")
+                self.selectValue = value
             }, cancel: {
                 print("cancel")
             }, attributes: attri)
-        case 16:
+        case 13:
             /// 这里地址数据源可定制 具体看源码
             var attri = KeenAddressPickerAttributes()
             attri.autoRecord = true
@@ -233,26 +220,73 @@ class ViewController: UITableViewController {
             }, cancel: {
                 print("cancel")
             }, attributes: attri)
-        case 17:
+        case 14:
             /// 这里只做一种样式展示 其他类似
             var attri = KeenToastAttributes()
             attri.viewMargin = 30
             showToast(
                 title: "理解 swift 和 swiftUI 的编译方式",
-                duration: 2,
+                duration: 1.5,
+                position: .top,
+                attributes: attri,
+                aView: nil
+            )
+        case 15:
+            /// 这里只做一种样式展示 其他类似
+            var attri = KeenToastAttributes()
+            attri.viewMargin = 30
+            showToast(
+                title: "理解 swift 和 swiftUI 的编译方式",
+                duration: 1.5,
                 position: .center,
                 attributes: attri,
                 aView: nil
             )
+        case 16:
+            /// 这里只做一种样式展示 其他类似
+            var attri = KeenToastAttributes()
+            attri.viewMargin = 30
+            showToast(
+                title: "理解 swift 和 swiftUI 的编译方式",
+                duration: 1.5,
+                position: .bottom,
+                attributes: attri,
+                aView: nil
+            )
+        case 17:
+            showHud()
+            /// 模拟请求耗时
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {[weak self] in
+                self?.dismissHud()
+            }
         case 18:
-            let viewH: CGFloat = 150+100+100
+            showHud(title: "正在提交", style: .torus)
+            /// 模拟请求耗时
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {[weak self] in
+                self?.dismissHud()
+            }
+        case 19:
+            var attri = KeenHudAttributes()
+            attri.systemColor = .red
+            showHud(
+                title: "正在提交",
+                style: .system,
+                attributes: attri,
+                aView: view
+            )
+            /// 模拟请求耗时
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {[weak self] in
+                self?.dismissHud(self?.view)
+            }
+        case 20:
+            let viewH: CGFloat = 170+100
             let rect = CGRect(x: 0, y: 0, width: .screenWidth, height: viewH)
             popView = DropListView(frame: rect, callback: { [weak self] in
                 self?.removePopView()
             })
             popView.show()
         default:
-            let viewH: CGFloat = 150+100+100
+            let viewH: CGFloat = 170+100
             let viewY: CGFloat = .safeAreaTopHeight + 64
             let rect = CGRect(x: 0, y: viewY, width: .screenWidth, height: viewH)
             popView = DropListView(frame: rect, callback: { [weak self] in
@@ -289,7 +323,7 @@ class DropListView: KeenDialog {
     /// 这里为了展示 利用了 frame 布局 推荐自动布局
     override func createSubviews() {
         
-        let label = UILabel(x: 0, y: 0, width: .screenWidth, height: 150)
+        let label = UILabel(x: 0, y: 0, width: .screenWidth, height: 170)
         label.text = "人有时候是绝对不能逃避战斗的！尤其是当伙伴的梦想被人嘲笑的时候！"
         label.font = UIFont.systemFont(ofSize: 15, weight: .regular)
         label.backgroundColor = .orange
@@ -297,19 +331,11 @@ class DropListView: KeenDialog {
         label.numberOfLines = 0
         addSubview(label)
         
-        let view = UILabel(x: 0, y: label.bottom, width: .screenWidth, height: 100)
-        view.text = "如果连一个船长都保护不了，还谈什么野心，路飞可是要成为海贼王的男人"
-        view.font = UIFont.systemFont(ofSize: 15, weight: .regular)
-        view.backgroundColor = .brown
-        view.textAlignment = .center
-        view.numberOfLines = 0
-        addSubview(view)
-        
         let btn = UIButton(type: .custom)
         btn.backgroundColor = .cyan
         btn.setTitle("按钮", for: .normal)
         btn.setTitleColor(.white, for: .normal)
-        btn.frame = CGRect(x: 100, y: view.bottom, width: .screenWidth - 200, height: 100)
+        btn.frame = CGRect(x: 0, y: label.bottom, width: .screenWidth, height: 100)
         btn.addTarget(self, action: #selector(clickViewAction), for: .touchUpInside)
         addSubview(btn)
     }

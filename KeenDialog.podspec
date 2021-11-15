@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name          = 'KeenDialog'
-  s.version       = '1.0.0'
+  s.version       = '1.0.1'
   s.summary       = '一款非常简便轻巧的对话弹窗，对业务零耦合，可自由定制化属性参数'
   s.homepage      = 'https://github.com/chongzone/KeenDialog'
   s.license       = { :type => 'MIT', :file => 'LICENSE' }
